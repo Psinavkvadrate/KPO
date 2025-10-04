@@ -1,0 +1,62 @@
+{
+  "features": {
+    "createBid": {
+      "title": "Создание заявки",
+      "create": "Создать",
+      "cancel": "Отменить",
+      "upload": "Загрузить",
+      "success": "Заявка успешно создана!",
+      "error": "Ошибка при создании заявки",
+      "placeholder": {
+        "currency": "Выберите валюту",
+        "status": "Выберите статус"
+      },
+      "validation": {
+        "sum": "Введите сумму",
+        "purpose": "Введите назначение платежа",
+        "recipientName": "Введите имя получателя",
+        "recipientDetails": "Введите реквизиты получателя",
+        "recipientCountry": "Введите страну получателя"
+      },
+      "field": {
+        "user": "Пользователь",
+        "sum": "Сумма",
+        "currency": "Валюта",
+        "purpose": "Назначение платежа",
+        "tin": "ИНН",
+        "rcr": "РСН",
+        "senderName": "Имя отправителя",
+        "senderAccount": "Счет отправителя",
+        "recipientName": "Имя получателя",
+        "recipientDetails": "Реквизиты получателя",
+        "recipientCountry": "Страна получателя",
+        "recipientAddress": "Адрес получателя",
+        "recipientAccount": "Счет получателя",
+        "recipientNationality": "Национальность получателя",
+        "recipientResidenceCountry": "Страна проживания получателя",
+        "bankCountry": "Страна банка",
+        "directorName": "Имя директора",
+        "directorNationality": "Национальность директора",
+        "bank": "Банк",
+        "bankAddress": "Адрес банка",
+        "bic": "БИК",
+        "vat": "НДС",
+        "description": "Описание",
+        "status": "Статус",
+        "date": "Дата",
+        "time": "Время",
+        "creator_id": "ID создателя",
+        "assigned_id": "ID ответственного",
+        "documents": "Документы"
+      }
+    }
+  },
+  "enums": {
+    "transactionStatus": {
+        "new": "Новый",
+        "accepted": "Принят",
+        "agent_suggestion": "Предложение агента",
+        "importer_suggestion": "Предложение импортера"
+        }
+    }
+}
