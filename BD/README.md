@@ -7,7 +7,8 @@
 npm install
 
 ### после установки PostgreSQL в cmd пишем :
-C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\database_schema.sql"
+```bash
+C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\database_schema.sql"```
 
 (что то типо такого выведет)
 ```
@@ -24,7 +25,8 @@ CREATE INDEX
 ```
 
 #в cmd пишем :
-C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\sample_data.sql"
+```bash
+C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\sample_data.sql"```
 
 (что то типо такого выведет)
 Пароль пользователя postgres:
@@ -77,6 +79,7 @@ GET /api/payments - История платежей
 GET /api/health - Проверка работы API
 
 ### проверка api: http://localhost:3000/api/health
+
 
 
 
