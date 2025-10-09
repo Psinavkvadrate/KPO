@@ -1,4 +1,4 @@
-### Установка и запуск
+## Установка и запуск
 
 - PostgreSQL 18 (https://www.postgresql.org/download/windows/)
 
@@ -8,7 +8,8 @@ npm install
 
 ### после установки PostgreSQL в cmd пишем :
 ```bash
-C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\database_schema.sql"```
+C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\database_schema.sql"
+```
 
 (что то типо такого выведет)
 ```
@@ -24,9 +25,10 @@ CREATE INDEX
 CREATE INDEX
 ```
 
-#в cmd пишем :
+### в cmd пишем :
 ```bash
-C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\sample_data.sql"```
+C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\sample_data.sql"
+```
 
 (что то типо такого выведет)
 Пароль пользователя postgres:
@@ -65,11 +67,11 @@ const pool = new Pool({
 
 
 
-### Запускаем сервер
+## Запускаем сервер
 node app.js
 
 
-API
+##API
 POST /api/auth/login - Вход в систему
 POST /api/auth/register - Регистрация
 GET /api/users - Список пользователей
@@ -79,6 +81,7 @@ GET /api/payments - История платежей
 GET /api/health - Проверка работы API
 
 ### проверка api: http://localhost:3000/api/health
+
 
 
 
