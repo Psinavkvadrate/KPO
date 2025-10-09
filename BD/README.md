@@ -3,7 +3,7 @@
 - PostgreSQL 18 (https://www.postgresql.org/download/windows/)
 
 - Node.js 16+(https://nodejs.org/en/download)
-## +прописать
+### +прописать
 npm install
 
 ### после установки PostgreSQL в cmd пишем (что то типо такого выведет)
@@ -68,3 +68,4 @@ GET /api/payments - История платежей
 GET /api/health - Проверка работы API
 
 ### проверка api: http://localhost:3000/api/health
+
