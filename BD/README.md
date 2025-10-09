@@ -31,13 +31,14 @@ C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_s
 ```
 
 (что то типо такого выведет)
+```
 Пароль пользователя postgres:
 
 INSERT 0 3
 INSERT 0 3
 INSERT 0 2
 INSERT 0 1
-
+```
 
 
 ### Создаем .env из .env.example,КОМАНДА: 
@@ -81,6 +82,7 @@ GET /api/payments - История платежей
 GET /api/health - Проверка работы API
 
 ### проверка api: http://localhost:3000/api/health
+
 
 
 
