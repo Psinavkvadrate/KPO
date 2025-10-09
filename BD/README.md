@@ -1,12 +1,15 @@
+p.s. если будете в VisualS, проект лучше выбирать "Приложение JavaScript Express"
 ## Установка и запуск
 
 - PostgreSQL 18 (https://www.postgresql.org/download/windows/)
 
 - Node.js 16+(https://nodejs.org/en/download)
-### +прописать
+### +прописать в VS или тп
+```bash
 npm install
+```
 
-### после установки PostgreSQL в cmd пишем :
+### после установки PostgreSQL в cmd пишем (для создания бдшек из файлов):
 ```bash
 C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\database_schema.sql"
 ```
@@ -88,6 +91,7 @@ GET /api/contracts - Список договоров
 GET /api/payments - История платежей
 GET /api/health - Проверка работы API
 ```
+
 
 
 
