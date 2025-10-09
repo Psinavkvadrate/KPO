@@ -54,7 +54,8 @@ const pool = new Pool({
     database: process.env.DB_NAME || 'car_system',
     password: process.env.DB_PASSWORD || '',
     port: process.env.DB_PORT || 5432,
-});```
+});
+```
 
 такое надо прописать
 ```javascript
@@ -64,7 +65,8 @@ const pool = new Pool({
     database: 'car_system',
     password: 'Zadolbali11',
     port: 5432,
-});```
+});
+```
 
 
 
@@ -72,7 +74,7 @@ const pool = new Pool({
 node app.js
 
 
-##API
+## API
 POST /api/auth/login - Вход в систему
 POST /api/auth/register - Регистрация
 GET /api/users - Список пользователей
@@ -82,6 +84,7 @@ GET /api/payments - История платежей
 GET /api/health - Проверка работы API
 
 ### проверка api: http://localhost:3000/api/health
+
 
 
 
