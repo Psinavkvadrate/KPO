@@ -1,14 +1,14 @@
-### Установка и запуск
+### РЈСЃС‚Р°РЅРѕРІРєР° Рё Р·Р°РїСѓСЃРє
 
 - PostgreSQL 18 (https://www.postgresql.org/download/windows/)
 
 - Node.js 16+(https://nodejs.org/en/download)
-## +прописать
+## +РїСЂРѕРїРёСЃР°С‚СЊ
 npm install
 
-### после установки PostgreSQL в cmd пишем (что то типо такого выведет)
+### РїРѕСЃР»Рµ СѓСЃС‚Р°РЅРѕРІРєРё PostgreSQL РІ cmd РїРёС€РµРј (С‡С‚Рѕ С‚Рѕ С‚РёРїРѕ С‚Р°РєРѕРіРѕ РІС‹РІРµРґРµС‚)
 C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\database_schema.sql"
-Пароль пользователя postgres:
+РџР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ postgres:
 
 CREATE TABLE
 CREATE TABLE
@@ -20,7 +20,7 @@ CREATE INDEX
 CREATE INDEX
 
 C:\Users\User>"C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres -d car_system -f "C:\Users\User\source\repos\ExpressProject1\sample_data.sql"
-Пароль пользователя postgres:
+РџР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ postgres:
 
 INSERT 0 3
 INSERT 0 3
@@ -28,11 +28,11 @@ INSERT 0 2
 INSERT 0 1
 
 
-### Создаем .env из .env.example,КОМАНДА: 
+### РЎРѕР·РґР°РµРј .env РёР· .env.example,РљРћРњРђРќР”Рђ: 
 cp .env.example .env
 
-ЛИБО
- настройки в app.js из этого
+Р›РР‘Рћ
+ РЅР°СЃС‚СЂРѕР№РєРё РІ app.js РёР· СЌС‚РѕРіРѕ
 
 const pool = new Pool({
     user: process.env.DB_USER || 'postgres',
@@ -42,7 +42,7 @@ const pool = new Pool({
     port: process.env.DB_PORT || 5432,
 });
 
-такое надо прописать
+С‚Р°РєРѕРµ РЅР°РґРѕ РїСЂРѕРїРёСЃР°С‚СЊ
 
 const pool = new Pool({
     user: 'postgres',
@@ -54,17 +54,17 @@ const pool = new Pool({
 
 
 
-### Запускаем сервер
+### Р—Р°РїСѓСЃРєР°РµРј СЃРµСЂРІРµСЂ
 node app.js
 
 
 API
-POST /api/auth/login - Вход в систему
-POST /api/auth/register - Регистрация
-GET /api/users - Список пользователей
-GET /api/cars - Каталог автомобилей
-GET /api/contracts - Список договоров
-GET /api/payments - История платежей
-GET /api/health - Проверка работы API
+POST /api/auth/login - Р’С…РѕРґ РІ СЃРёСЃС‚РµРјСѓ
+POST /api/auth/register - Р РµРіРёСЃС‚СЂР°С†РёСЏ
+GET /api/users - РЎРїРёСЃРѕРє РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
+GET /api/cars - РљР°С‚Р°Р»РѕРі Р°РІС‚РѕРјРѕР±РёР»РµР№
+GET /api/contracts - РЎРїРёСЃРѕРє РґРѕРіРѕРІРѕСЂРѕРІ
+GET /api/payments - РСЃС‚РѕСЂРёСЏ РїР»Р°С‚РµР¶РµР№
+GET /api/health - РџСЂРѕРІРµСЂРєР° СЂР°Р±РѕС‚С‹ API
 
-### проверка api: http://localhost:3000/api/health
+### РїСЂРѕРІРµСЂРєР° api: http://localhost:3000/api/health
