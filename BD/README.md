@@ -74,7 +74,12 @@ const pool = new Pool({
 node app.js
 
 
-## API
+
+### проверка api через подобное: 
+http://localhost:3000/api/health
+
+## справка по API
+```
 POST /api/auth/login - Вход в систему
 POST /api/auth/register - Регистрация
 GET /api/users - Список пользователей
@@ -82,9 +87,7 @@ GET /api/cars - Каталог автомобилей
 GET /api/contracts - Список договоров
 GET /api/payments - История платежей
 GET /api/health - Проверка работы API
-
-### проверка api: http://localhost:3000/api/health
-
+```
 
 
 
