@@ -1,4 +1,4 @@
--- Таблица пользователей (из Auth Module)
+-- Users table (from Auth Module)
 CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS users (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Таблица автомобилей (из Car Management Module)
+-- Cars table (from Car Management Module)
 CREATE TABLE IF NOT EXISTS cars (
     vin VARCHAR(17) PRIMARY KEY,
     brand VARCHAR(50) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS cars (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Таблица клиентов (из Client Management Module)
+-- Clients table (from Client Management Module)
 CREATE TABLE IF NOT EXISTS clients (
     client_id SERIAL PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
@@ -36,11 +36,11 @@ CREATE TABLE IF NOT EXISTS clients (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Таблица контрактов--
+-- Contracts table
 CREATE TABLE IF NOT EXISTS contracts (
     contract_id SERIAL PRIMARY KEY,
     date DATE NOT NULL DEFAULT CURRENT_DATE,
-    client_name VARCHAR(100) NOT NULL,  -- Просто имя клиента вместо связи
+    client_name VARCHAR(100) NOT NULL,
     client_phone VARCHAR(20),
     car_vin VARCHAR(17) REFERENCES cars(vin),
     amount DECIMAL(10,2) NOT NULL,
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS contracts (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Таблица платежей 
+-- Payments table
 CREATE TABLE IF NOT EXISTS payments (
     payment_id SERIAL PRIMARY KEY,
     contract_id INTEGER REFERENCES contracts(contract_id),
@@ -58,9 +58,10 @@ CREATE TABLE IF NOT EXISTS payments (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Индексы
+-- Indexes
 CREATE INDEX IF NOT EXISTS idx_users_email ON users(email);
 CREATE INDEX IF NOT EXISTS idx_users_role ON users(role);
 CREATE INDEX IF NOT EXISTS idx_cars_brand ON cars(brand);
 CREATE INDEX IF NOT EXISTS idx_cars_status ON cars(status);
 CREATE INDEX IF NOT EXISTS idx_contracts_status ON contracts(status);
+[file content end]
