@@ -1,0 +1,49 @@
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 0 24px;
+  border-bottom: 1px solid #2a2a2a;
+
+  .logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #b388ff;
+    text-shadow: 0 0 6px rgba(179, 136, 255, 0.7);
+  }
+
+  .nav-menu {
+    background: transparent;
+    flex: 1;
+    margin-left: 40px;
+
+    .ant-menu-item {
+      color: #ccc !important;
+
+      &:hover {
+        color: #b388ff !important;
+      }
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .profile-avatar {
+      cursor: pointer;
+      background-color: #b388ff;
+
+      &:hover {
+        box-shadow: 0 0 12px rgba(179, 136, 255, 0.6);
+      }
+    }
+
+    .username {
+      font-size: 14px;
+      color: #b388ff;
+    }
+  }
+}
