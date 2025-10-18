@@ -8,15 +8,15 @@
 }
 
 .auth-brand {
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: #7a3cff;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  font-family: 'Roboto Condensed', sans-serif;
-  text-shadow: 0 0 15px rgba(122, 60, 255, 0.7);
-}
+    text-align: center;
+
+    .auth-logo {
+      height: 150px;
+      width: auto;
+      max-width: 200px;
+      object-fit: contain;
+    }
+  }
 
 .auth-card.strict {
   background: #141414 !important;

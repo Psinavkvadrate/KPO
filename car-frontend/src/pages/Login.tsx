@@ -38,7 +38,13 @@ export default function Login() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="auth-brand">ЖСПД</div>
+        <div className="auth-brand">
+          <img 
+            src="/logo.png" 
+            alt="Логотип ЖСПД" 
+            className="auth-logo"
+          />
+        </div>
         <Card className="auth-card strict">
           <Title level={3} className="auth-title strict">
             Вход в аккаунт

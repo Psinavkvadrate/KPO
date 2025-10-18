@@ -3,15 +3,13 @@ const { Pool } = require('pg');
 const app = express();
 const port = 3000;
 
-require('dotenv').config();
-
 // Настройка PostgreSQL
 const pool = new Pool({
-    user: process.env.DB_USER || 'postgres',
-    host: process.env.DB_HOST || 'localhost',
-    database: process.env.DB_NAME || 'car_system',
-    password: process.env.DB_PASSWORD || '',
-    port: process.env.DB_PORT || 5432,
+    user: 'postgres',
+    host: 'localhost',
+    database: 'car_system',
+    password: 'pass',
+    port: 5432,
 });
 
 app.use(express.json());
